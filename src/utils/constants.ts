@@ -454,10 +454,10 @@ export const contacts = [
       "https://img.icons8.com/?size=100&id=fJp7hepMryiw&format=png&color=000000",
   },
   {
-    id: "email",
-    name: "Email",
-    link: "mailto:imaneelfadilelidrissi@gmail.com",
-    image: "https://img.icons8.com/?size=100&id=447&format=png&color=000000",
+    id: "bluesky",
+    name: "Bluesky",
+    link: "https://bsky.app/profile/oebelus.bsky.social",
+    image: "./bluesky.svg",
   },
   {
     id: "github",
@@ -745,7 +745,7 @@ export const currently = {
   cs: {
     verb: "learning",
     icon: "book",
-    items: ["Rust", "Haskell"],
+    items: ["Rust", "Haskell", "Racket"],
   },
   courses: {
     verb: "doing",
@@ -758,12 +758,16 @@ export const currently = {
   games: {
     verb: "playing",
     icon: "game",
-    items: ["Detroit: Become Human"],
+    items: [
+      "Detroit: Become Human",
+      "The Legend of Zelda: Breath of the Wild",
+      "Pokémon Legends: Arceus",
+    ],
   },
   series: {
     verb: "watching",
     icon: "movie",
-    items: ["Severance", "Westworld", "Ben 10"],
+    items: ["Westworld", "Ben 10"],
   },
   books: {
     verb: "reading",

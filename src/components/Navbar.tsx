@@ -25,8 +25,10 @@ export default function Navbar({clicked, setClicked}: {clicked: string, setClick
                 <ul className="list-none flex flex-col md:gap-6 justify-end flex-1">
                     {navLinks.map((nav, index) => (
                         <li key={index} className="mr-10">
-                            <Link 
-                                to={nav.id === "my_notes" ? 'https://oebelus.github.io/my_notes/' : nav.id}
+                            <Link
+                                // on new tab
+                                target={nav.id === "my_notes" ? "_blank" : "_self"}
+                                to={nav.id === "my_notes" ? 'https://oebelus.github.io/my_notes/#/my_notes/' : nav.id}
                                 onClick={() => setClicked(nav.name)} // Update clicked state
                                 className={`font-poppins font-normal cursor-pointer text-xl hover:text-violet-600 transition-all ${clicked === nav.name ? "text-violet-600" : "dark:text-gray-300"}`}
                             >
