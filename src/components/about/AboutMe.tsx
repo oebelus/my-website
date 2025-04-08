@@ -23,12 +23,15 @@ export default function AboutMe() {
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-4">
-          {/* Left Column - Bio & Hobbies (3/12) */}
+          {/* Left Column */}
           <div className="lg:col-span-3 space-y-4">
             {/* Bio */}
             <div className="border-2 border-violet-600 dark:border-zinc-500 rounded-lg bg-white/10 dark:bg-gray-800/30 backdrop-blur-sm overflow-hidden">
               <div className="bg-violet-600 dark:bg-[#906CCF] justify-between text-white px-3 py-2 flex items-center">
-                <span className="text-xs font-mono">bio.txt</span>
+                <span className="flex items-center gap-2">
+                  <img src="gifs/bio.png" alt="bio" />
+                  <span className="text-xs font-mono">bio.txt</span>
+                </span>
                 <Buttons />
               </div>
               <div className="p-4 text-base">
@@ -40,7 +43,10 @@ export default function AboutMe() {
             {/* Hobbies */}
             <div className="border-2 border-violet-600 dark:border-zinc-500 rounded-lg bg-white/10 dark:bg-gray-800/30 backdrop-blur-sm overflow-hidden">
               <div className="bg-violet-600 dark:bg-[#906CCF] justify-between text-white px-3 py-2 flex items-center">
-                <span className="text-xs font-mono">hobbies.txt</span>
+                <span className="flex items-center gap-2">
+                  <img src="gifs/hobbies.png" alt="hobbies" />
+                  <span className="text-xs font-mono">hobbies.txt</span>
+                </span>
                 <Buttons />
               </div>
               <div className="p-4 text-base">
@@ -58,7 +64,10 @@ export default function AboutMe() {
             {/* Lily's Pictures */}
             <div className="border-2 border-violet-600 dark:border-zinc-500 rounded-lg bg-white/10 dark:bg-gray-800/30 backdrop-blur-sm overflow-hidden">
               <div className="bg-violet-600 dark:bg-[#906CCF] justify-between text-white px-3 py-2 flex items-center">
-                <span className="text-xs font-mono">lily.jpg</span>
+                <span className="flex items-center gap-2">
+                  <img src="gifs/lily.png" alt="lily" />
+                  <span className="text-xs font-mono">lily.jpg</span>
+                </span>
                 <Buttons />
               </div>
               <div className="p-2 mb-4">
@@ -81,7 +90,10 @@ export default function AboutMe() {
             {/* Facts */}
             <div className="border-2 border-violet-600 dark:border-zinc-500 rounded-lg bg-white/10 dark:bg-gray-800/30 backdrop-blur-sm overflow-hidden">
               <div className="bg-violet-600 dark:bg-[#906CCF] text-white justify-between px-3 py-2 flex items-center">
-                <span className="text-xs font-mono">facts.txt</span>
+                <span className="flex items-center gap-2">
+                  <img src="gifs/facts.png" alt="facts" />
+                  <span className="text-xs font-mono">facts.jpg</span>
+                </span>
                   <Buttons />
               </div>
               <div className="p-4 text-base">
@@ -102,12 +114,15 @@ export default function AboutMe() {
             {/* Interests */}
             <div className="border-2 border-violet-600 dark:border-zinc-500 rounded-lg bg-white/10 dark:bg-gray-800/30 backdrop-blur-sm overflow-hidden">
               <div className="bg-violet-600 dark:bg-[#906CCF] justify-between text-white px-3 py-2 flex items-center">
-                <span className="text-xs font-mono">interests.txt</span>
+                <span className="flex items-center gap-2">
+                  <img src="gifs/interests.png" alt="interests" />
+                  <span className="text-xs font-mono">interests.txt</span>
+                </span>
                 <Buttons />
               </div>
               <div className="p-4 text-base">
                 <p>
-                  I am interested in many things <span className="text-violet-400">{"<"}
+                  I am interested in many things <span className="dark:text-violet-400 text-violet-600">{"<"}
                   I wish I had more than 24 hours a day{">"}</span>.
                   Current interests include: <br/><br/>
                     <p className="mx-2">- Theory of Computation;</p>
@@ -120,7 +135,10 @@ export default function AboutMe() {
             {/* Contact */}
             <div className="border-2 border-violet-600 dark:border-zinc-500 rounded-lg bg-white/10 dark:bg-gray-800/30 backdrop-blur-sm overflow-hidden">
               <div className="bg-violet-600 dark:bg-[#906CCF] justify-between text-white px-3 py-2 flex items-center">
-                <span className="text-xs font-mono">socials.txt</span>
+                <span className="flex items-center gap-2">
+                  <img src="gifs/socials.png" alt="socials" />
+                  <span className="text-xs font-mono">socials.txt</span>
+                </span>
                 <Buttons />
               </div>
               <div className="p-4 text-base">
