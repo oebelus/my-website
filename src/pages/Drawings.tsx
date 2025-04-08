@@ -11,7 +11,7 @@ export default function Drawings() {
         <title>{"Drawings"}</title>
       </Helmet>
       <div className="flex justify-between relative mx-[6%] sm:mx-[4%] mt-4">
-          <GoBack back="/misc" />
+          <GoBack back="/gallery" />
           <Theme isBlog={true} />
       </div>
 

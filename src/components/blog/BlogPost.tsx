@@ -1,5 +1,6 @@
 import Beans from "../../articles/Beans";
 import ChapterOne from "../../articles/category/ChapterOne";
+import Fractals from "../../articles/Fractals";
 import { formatDate } from "../../utils/Date";
 
 interface BlogPostProps {
@@ -12,11 +13,12 @@ interface BlogPostProps {
 export default function BlogPost({ title, date, content, category }: BlogPostProps) {
   const record: Record<string, React.ReactNode> = {
     "Beans": <Beans />,
-    "ChapterOne": <ChapterOne />
+    "ChapterOne": <ChapterOne />,
+    "Fractals": <Fractals />
   };
 
     return (
-        <div>
+        <div className="min-h-screen">
             <h1 className="text-4xl text-center mb-8">{title}</h1>
 
             {record[content] || <p>No content found</p>}

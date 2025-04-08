@@ -22,7 +22,7 @@ export default function Projects() {
       <div className={`${styles.flexStart} w-full`}>
         <div className={`${styles.boxWidth}`}>
           <div className={`${styles.boxWidth} mt-5 p-8 dark:text-gray-300`}>
-            <h3 className="text-xl dark:text-gray-300 text-black mb-5">
+            <h3 className="text-lg md:text-xl dark:text-gray-300 text-black mb-5">
               {`-> `}I mostly learn through project-based learning. This approach helps me understand concepts better and keeps me motivated to build more.
             </h3>
             <div className="relative flex py-5 items-center">
@@ -32,7 +32,7 @@ export default function Projects() {
               </span>
               <div className="flex-grow border-t border-gray-400"></div>
             </div>
-            <h3 className="text-2xl">Here are some of my favourite projects that I have worked on:</h3>
+            <h3 className="text-lg md:text-2xl">Here are some of my favourite projects that I have worked on:</h3>
             
             <div className="flex flex-wrap justify-center mt-6">
               {languages.map(language => (

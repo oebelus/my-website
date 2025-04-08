@@ -103,7 +103,7 @@ export default function MusicPlayer() {
     };
 
     return (
-        <div className="w-[90%] rounded-lg flex flex-col mx-auto mt-4 dark:bg-zinc-800 bg-violet-200 p-4 md:p-6">
+        <div className="md:w-[90%] rounded-lg flex flex-col mx-auto mt-4 dark:bg-zinc-800 bg-violet-200 md:p-6">
             {
                 (clicked && !audio.paused) && (
                     <div className="border-violet-500 dark:border-zinc-700 border-2 flex gap-10 justify-center items-center text-4xl p-4 rounded-lg dark:bg-[#1C1C1C] bg-violet-300">
@@ -145,7 +145,7 @@ export default function MusicPlayer() {
                             </div>
                             <div className="dark:text-white">
                                 <p className="text-xl">{song.name}</p>
-                                <p className="ml-4">{song.artist}</p>
+                                <p className="ml-4">* {song.artist}</p>
                             </div>
                         </div>
                     ))

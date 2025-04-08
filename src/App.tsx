@@ -14,19 +14,19 @@ function App() {
     document.documentElement.classList.remove('dark');
   }
 
-  const noSidebarRoute = location.pathname.startsWith('/blog/') || location.pathname.startsWith('/misc/');
+  const noSidebarRoute = location.pathname.startsWith('/blog/') || location.pathname.startsWith('/gallery/');
 
   return (
-    <div className="dark:bg-[#11181A] md:flex min-h-screen">
+    <div className="dark:bg-[#11181A] md:flex min-h-screen max-w-[100vw] overflow-hidden">
       {!noSidebarRoute && 
-        <div className="md:fixed top-0 left-0 h-full md:w-64 md:z-50">
+        <div className="md:fixed top-0 left-0 md:w-64 md:z-50">
           <Navbar clicked={clicked} setClicked={setClicked} />
         </div>
       }
       {!noSidebarRoute &&
-        <div className="md:block hidden ml-64 border-l border-gray-500 dark:border-gray-300 mx-4"></div>
+        <div className="md:block hidden ml-64 border-l border-gray-500 dark:border-gray-300"></div>
       }
-      <div className="w-full overflow-hidden">
+      <div className="min-h-screen w-full overflow-hidden">
         <Outlet />
       </div>
     </div>

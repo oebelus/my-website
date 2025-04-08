@@ -6,7 +6,7 @@ hljs.registerLanguage("haskell", haskell);
 
 export default function ChapterOne() {
   return (
-    <div className="font-sans mb-4 text-lg">
+    <div className="font-sans mb-4 text-lg min-h-screen">
         <p className="italic text-"><span className='font-bold text-violet-400'>1.</span> Implement, as best as you can, the identity function in your favorite language (or the second favorite, if your favorite language happens to be Haskell).</p>
         <br />
         {"> "}The identity function being:

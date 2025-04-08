@@ -14,24 +14,16 @@ export const navLinks = [
     name: "blog;",
   },
   {
-    id: "now",
-    name: "now;",
+    id: "media",
+    name: "media;",
   },
   {
     id: "my_notes",
     name: "my_notes;",
   },
   {
-    id: "misc",
-    name: "misc;",
-  },
-  // {
-  //   id: "resume",
-  //   name: "resume;",
-  // },
-  {
-    id: "contact",
-    name: "contact_me;",
+    id: "gallery",
+    name: "gallery;",
   },
 ];
 
@@ -493,7 +485,7 @@ export const builds = [
 ];
 
 export const hobbies = [
-  "Playing a game.",
+  "Gaming.",
   "Learning About Some Random Topic.",
   'Watching: ["Movie", "Series", "Anime", "YouTube"].',
   'Reading: ["Manga", "Comics", "A Book"].',
@@ -502,13 +494,23 @@ export const hobbies = [
 
 export const facts = [
   "My favorite numbers are 7 and 17.",
-  "I love dinosaurs (it's a shame no one asks about favorite dinosaurs anymore).",
+  "My favorite dinosaur `at the moment` is the Therizinosaurus.",
   "I'm a huge fan of construction vehicles and trucks.",
   "My major has nothing to do with Computer Science.",
   "I collect toys, shells, rocks...",
+  "Jack of all trades, master of none.",
 ];
 
 export const posts: Post[] = [
+  {
+    id: "fractals",
+    title: "Generative Recursion",
+    date: "04/08/2025",
+    category: ["Racket", "Functional Programming"],
+    description:
+      "Patterns I generated while trying to implement the Sierpinski Carpet.",
+    content: "Fractals",
+  },
   {
     id: "chapterone",
     title: "Category Theory For Programmers: Chapter 1 Solutions",
@@ -528,10 +530,10 @@ export const posts: Post[] = [
   },
 ];
 
-export const misc = [
+export const gallery = [
   {
     id: "drawings",
-    name: "Drawings Gallery",
+    name: "Drawings",
     description: "A collection of my drawings and paintings",
   },
 ];
@@ -685,38 +687,38 @@ export const images = [
 export const songs = [
   {
     id: 0,
+    link: "songs/X_vs_Zero_Decisive_Battle_2_Soundtrack.mp3",
+    name: "X vs Zero Decisive Battle 2",
+    artist: "Breis",
+    image: "xvszero.jpg",
+  },
+  {
+    id: 1,
     link: "songs/Igorrr_Tout_Petit_Moineau.mp3",
     name: "Tout Petit Moineau",
     artist: "Igorrr",
     image: "igorrr.jpg",
   },
   {
-    id: 1,
-    link: "songs/My_Dying_Bride_Your_Broken_Shore.mp3",
-    name: "Your Broken Shore",
-    artist: "My Dying Bride",
-    image: "dying_bride.jpg",
+    id: 2,
+    link: "songs/No_Leaf_Clover.mp3",
+    name: "No Leaf Clover",
+    artist: "Metallica",
+    image: "metallica.jpg",
   },
   {
-    id: 2,
+    id: 3,
     link: "songs/SABATON_The_Attack_of_the_Dead_Men.mp3",
     name: "The Attack of the Dead Men",
     artist: "Sabaton",
     image: "sabaton.jpg",
   },
   {
-    id: 3,
-    link: "songs/Hands_Dreamsearch.mp3",
-    name: "Dreamsearch",
-    artist: "Hands",
-    image: "hands.jpg",
-  },
-  {
     id: 4,
-    link: "songs/Eluveitie_Thousandfold.mp3",
-    name: "Thousandfold",
-    artist: "Eluveitie",
-    image: "eluveitie.jpg",
+    link: "songs/Spear_of_Justice.mp3",
+    name: "Spear of Justice",
+    artist: "Toby Fox",
+    image: "undertale.jpg",
   },
   {
     id: 5,
@@ -727,17 +729,17 @@ export const songs = [
   },
   {
     id: 6,
-    link: "songs/Ocean_of_Grief_Spiritual_Fortress.mp3",
-    name: "Spiritual Fortress",
-    artist: "Ocean of Grief",
-    image: "ocean_of_grief.jpg",
+    link: "songs/And_Then_There_Was_Silence.mp3",
+    name: "And Then There Was Silence",
+    artist: "Blind Guardian",
+    image: "blind_guardian.jpg",
   },
   {
     id: 7,
-    link: "songs/Wintersun_Land_of_Snow_and_Sorrow.mp3",
-    name: "Land of Snow and Sorrow",
-    artist: "Wintersun",
-    image: "wintersun.jpg",
+    link: "songs/Megaman_X_5.mp3",
+    name: "Megaman X5 Intro",
+    artist: "",
+    image: "megaman_x5.jpg",
   },
 ];
 
@@ -752,7 +754,6 @@ export const currently = {
     icon: "📚",
     items: [
       "The OSSU curriculum: currently doing the Systematic Program Design",
-      "Cyfrin Updraft: Foundry Fundamentals",
     ],
   },
   games: {
@@ -779,3 +780,36 @@ export const currently = {
     ],
   },
 };
+
+export const games = [
+  {
+    id: "trackmania",
+    name: "Trackmania",
+    image:
+      "https://image.api.playstation.com/vulcan/ap/rnd/202303/2020/096cc3084128fe458078a76d70785a23026a416d583ae5bb.jpg",
+    comment: "This is my favorite game of all the time.",
+  },
+  {
+    id: "detroit",
+    name: "Detroit: Become Human",
+    image:
+      "https://m.media-amazon.com/images/M/MV5BYjBiZTAwYzQtZDkyMC00NjM4LWI5ODUtNWM3NGE3YjZjY2M1XkEyXkFqcGc@._V1_.jpg",
+    comment: "Cool story with a lot of Androids going out of control.",
+  },
+  {
+    id: "zelda",
+    name: "The Legend of Zelda: Breath of the Wild",
+    image:
+      "https://upload.wikimedia.org/wikipedia/en/thumb/c/c6/The_Legend_of_Zelda_Breath_of_the_Wild.jpg/250px-The_Legend_of_Zelda_Breath_of_the_Wild.jpg",
+    comment: "It's an addictive game, makes time go faster.",
+  },
+  {
+    id: "pokemon",
+    name: "Pokémon Legends: Arceus",
+    image:
+      "https://m.media-amazon.com/images/M/MV5BMDQ3ZjQyNjMtYjI0Yi00MDQxLTk0MzQtZjBiYmY0MWYyY2UyXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+    comment: "Collecting Pokémons was never this fun :3",
+  },
+];
+
+export const media_books = ["Flatland", "Logically Fallacious"];
