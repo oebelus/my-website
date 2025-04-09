@@ -24,7 +24,8 @@ export default function Navbar({clicked, setClicked}: {clicked: string, setClick
             <div className="hidden md:flex flex-1 justify-end items-center">
                 <ul className="list-none flex flex-col md:gap-6 justify-end flex-1">
                     {navLinks.map((nav, index) => (
-                        <li key={index} className="mr-10">
+                        <li key={index} className="mr-10 flex items-center gap-2">
+                            <img className='w-6 h-6' src='folder.png' />
                             <Link
                                 target={nav.id === "my_notes" ? "_blank" : "_self"}
                                 to={nav.id === "my_notes" ? 'https://oebelus.github.io/my_notes/#/my_notes/' : nav.id}
