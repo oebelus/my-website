@@ -112,7 +112,6 @@ export default function MusicPlayer() {
                 )
             }
             
-            
             <div className="my-4 dark:text-violet-500 text-gray-500 flex gap-10 justify-center items-center text-4xl">
                 <FontAwesomeIcon className="cursor-pointer" icon={faBackward} onClick={handleBackwards} />
                 <FontAwesomeIcon className="cursor-pointer" onClick={handleClickPlay} icon={clicked ? faPause : faPlay} />
@@ -144,8 +143,8 @@ export default function MusicPlayer() {
                                 </button>
                             </div>
                             <div className="dark:text-white">
-                                <p className="text-xl">{song.name}</p>
-                                <p className="ml-4">* {song.artist}</p>
+                                <p className="md:text-xl text-lg">{song.name}</p>
+                                <p className="ml-4 md:text-lg text-base"><span className="text-violet-500">*</span> {song.artist}</p>
                             </div>
                         </div>
                     ))

@@ -7,7 +7,6 @@ function App() {
   const [clicked, setClicked] = useState("");
   const location = useLocation();
 
-  // Dark mode setup
   if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
     document.documentElement.classList.add('dark');
   } else {
@@ -19,13 +18,11 @@ function App() {
   return (
     <div className="dark:bg-[#11181A] md:flex min-h-screen max-w-[100vw] overflow-hidden">
       {!noSidebarRoute && 
-        <div className="md:fixed top-0 left-0 md:w-64 md:z-50">
+        <div className="top-0 left-0 w-64 md:h-screen bg-white dark:bg-[#11181A]">
           <Navbar clicked={clicked} setClicked={setClicked} />
         </div>
       }
-      {!noSidebarRoute &&
-        <div className="md:block hidden ml-64 border-l border-gray-500 dark:border-gray-300"></div>
-      }
+      
       <div className="min-h-screen w-full overflow-hidden">
         <Outlet />
       </div>

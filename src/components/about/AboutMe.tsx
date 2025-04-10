@@ -3,10 +3,10 @@ import Buttons from "../decoration/Buttons";
 
 export default function AboutMe() {
   return (
-    <section className="lg:mr-2 p-8 lg:p-1 mt-5 dark:text-gray-300">
+    <section className="lg:mr-2 p-8 lg:p-5 mt-5 dark:text-gray-300">
       {/* Header Section */}
       <header>
-        <h1 className="relative w-max font-mono text-6xl font-bold
+        <h1 className="relative w-max font-mono text-6xl font-bold md:ml-12
           before:absolute before:inset-0 before:animate-typewriter before:bg-white before:dark:bg-[#11181A]
           after:absolute after:inset-0 after:w-[0.125em] after:animate-caret after:bg-violet-400">
           Oebelus,

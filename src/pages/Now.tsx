@@ -3,12 +3,12 @@ import styles from "../utils/style";
 import { games, media_books } from "../utils/constants";
 import MusicPlayer from "../components/MusicPlayer";
 
-export default function Media() {
+export default function Now() {
 
   return (
     <div className="mb-10">
       <Helmet>
-        <title>media;</title>
+        <title>now;</title>
       </Helmet>
       <div className={`${styles.flexStart} w-full`}>
         <div className={`${styles.boxWidth}`}>
@@ -23,7 +23,6 @@ export default function Media() {
               <div className="flex-grow border-t border-gray-400" />
             </div>
 
-            {/* Currently Section */}
             <div className="p-4">
               <div className="p-4">
                 <div className="bg-violet-500 p-4 mt-4 rounded-md">
@@ -31,7 +30,7 @@ export default function Media() {
                 </div>
 
                 <div className="col-span-2 mt-4">
-                    <p className="md:px-8 text-2xl dark:text-gray-300 text-gray-600"><span>{"> "}</span> The music I am currently listening to non-stop:</p>
+                    <p className="md:px-8 md:text-2xl text-lg dark:text-gray-300 text-gray-600"><span>{"> "}</span> The music I am currently listening to non-stop:</p>
                     <MusicPlayer />
                 </div>
               </div>

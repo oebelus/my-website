@@ -32,7 +32,7 @@ export default function Misc() {
                                 </Link>
                             ))}
                             <div className="px-20 mt-4">
-                                <p className="dark:text-white text-xl">{"{ "}Will add more stuff soon :D{" }"}</p>
+                                <p className="dark:text-white text-lg">{"{ "}Will add more stuff soon :D{" }"}</p>
                             </div>
                         </div>
                     </div>

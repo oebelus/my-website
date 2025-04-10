@@ -3,7 +3,7 @@ import Navbar from "../components/Navbar";
 import Projects from "../pages/Projects";
 import Blog from "../pages/Blog";
 import Resume from "../pages/Resume";
-import Media from "../pages/Media";
+import Now from "../pages/Now";
 import Gallery from "../pages/Gallery";
 
-export { About, Navbar, Projects, Blog, Gallery, Resume, Media };
+export { About, Navbar, Projects, Blog, Gallery, Resume, Now };

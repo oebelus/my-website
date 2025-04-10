@@ -14,8 +14,8 @@ export const navLinks = [
     name: "blog;",
   },
   {
-    id: "media",
-    name: "media;",
+    id: "now",
+    name: "now;",
   },
   {
     id: "my_notes",
