@@ -22,7 +22,7 @@
 
 html,
 body {
-  cursor: url("gam1552.cur"), pointer;
+  cursor: url("gam1552.cur");
 }
 
 ::-moz-selection {

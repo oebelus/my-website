@@ -163,8 +163,53 @@ export const projects = [
     ],
   },
   {
+    id: "parsenator",
+    name: "parsenator",
+    description:
+      "Trying to implement a basic parser combinator for strings, that I wanted to use for my lisp interpreter project, because I like doing everything from scratch",
+    github: "https://github.com/oebelus/parsenator",
+    features: [
+      "Specific matchers that match a specific output",
+      "General matches that succeed any valid input.",
+      'Logical combinators (such as "or" and "and").',
+      'Transformation combinators (such as "map" and "seq").',
+      "Error handling that contains one parser combinator which is fail (Always fails with a given error message).",
+    ],
+    technologies: ["Rust"],
+  },
+  {
+    id: "ilisp",
+    name: "ilisp",
+    description:
+      "A lisp interpreter, because why not? it's a Racket-like lisp (since I love Racket).",
+    github: "https://github.com/oebelus/iLisp",
+    features: [
+      "Binary, unary, logical and comparison operations",
+      "Conditionals.",
+      "Function definitions and function calls.",
+      "Supports recursion too.",
+    ],
+    technologies: ["Rust"],
+  },
+  {
+    id: "ilanguage",
+    name: "My Toy Imperative Language",
+    description:
+      "The first language I ever wrote in my life. Planning to write more and improve the ones I already wrote.",
+    github: "https://github.com/oebelus/Language",
+    technologies: ["C#"],
+    features: [
+      "The grammar is here: https://github.com/oebelus/Language/blob/master/Grammar.txt.",
+      "It contains a Lexer, and Interpreter and a compiler to the VM I wrote (above project).",
+      "Supports function calls definitions and function calls, has an environment for closures.",
+      "Global and local variables.",
+      "This project took me a lot of time but it was really fun.",
+      "I followed Crafting Interpreters' book among other resources.",
+    ],
+  },
+  {
     id: "rshell",
-    name: "A Shell in Rust",
+    name: "A Simple Shell",
     description:
       "A REPL POSIX compliant shell in Rust that's capable of interpreting shell commands, running external programs and some builtin commands.",
     github: "https://github.com/oebelus/rubik-s",
@@ -245,6 +290,15 @@ export const projects = [
     demo: "https://oebelus.github.io/pongTs/",
   },
   {
+    id: "html-wrapper-plugin",
+    name: "HTML Wrapper",
+    description:
+      "This is an Obsidian plugin that turns your favourite HTML snippets into reusable piece of code without the need to type them each time. It's already submitted, waiting for approval, but it works like magic. I use it on a daily basis!",
+    github: "https://github.com/oebelus/html-wrapper-plugin",
+    features: ["Save your favourite HTML and inline CSS styling."],
+    technologies: ["TypeScript", "Obsidian", "Plugin"],
+  },
+  {
     id: "http_server",
     name: "HTTP Server in Java",
     description:
@@ -279,20 +333,6 @@ export const projects = [
       "Morgan",
       "Helmet",
     ],
-  },
-  {
-    id: "discord_bot",
-    name: "Formula Discord Bot",
-    description:
-      "A Discord bot built with Python that interacts with users and performs web scraping to retrieve and send information about Formula E and Formula One races.",
-    github: "https://github.com/oebelus/formula_bot",
-    features: [
-      "Discord Integration: Responds to user messages and sends updates to a specified channel.",
-      "Web Scraping: Retrieves race data for Formula E and Formula One using BeautifulSoup and Selenium.",
-      "Background Tasks: Periodically sends updates about races to the Discord channel.",
-      "JSON Storage: Saves race data to JSON files for later use.",
-    ],
-    technologies: ["Python", "Discord.py", "BeautifulSoup", "Selenium"],
   },
   {
     id: "solar_system",
@@ -376,52 +416,6 @@ export const projects = [
     technologies: ["Java", "Spring Boot", "Hibernate", "Postman", "MySQL"],
   },
   {
-    id: "pantry",
-    name: "Inventory Management Application",
-    description:
-      "Meet the Inventory Management App, your go-to tool for keeping your product inventory in check! With an easy-to-use interface, you can track, filter, and organize your products effortlessly.",
-    github: "https://github.com/oebelus/inventoryManager",
-    features: [
-      "Product Management: Add, update, and delete products.",
-      "Inventory Tracking: Monitor product counts and expiration dates.",
-      "Category Filtering: Filter products by categories with case-insensitive search.",
-      "Fully responsive and compatible with all screen sizes!",
-    ],
-    technologies: [
-      "React",
-      "TypeScript",
-      "Tailwind CSS",
-      "Java",
-      "Spring Boot",
-      "Hibernate",
-      "MySQL",
-    ],
-    demo: "https://youtu.be/mrS1Cxl2RDE",
-  },
-  {
-    id: "assistantai",
-    name: "AI Customer Assistant Bot",
-    description:
-      "AssistantAi is an AI-powered customer assistant chatbot built with Java and Spring Boot. Designed to provide intelligent and adaptive customer service.",
-    github: "https://github.com/oebelus/AssistantAi",
-    features: [
-      "Natural Language Processing (NLP): Understands and responds to customer queries in natural language.",
-      "Contextual Awareness.",
-      "Strict Information Provision within limitations.",
-      "Can be integrated with various platforms such as websites, mobile apps, and CRM systems.",
-      "Customizable and Scalable.",
-    ],
-    technologies: [
-      "Java",
-      "Spring Boot",
-      "MySQL",
-      "Tailwind CSS",
-      "TypeScript",
-      "OpenAI GPT",
-      "Groq API",
-    ],
-  },
-  {
     id: "rubiks",
     name: "Rubik's Cube",
     description: "An interactive Three.js Rubik's cube.",
@@ -502,6 +496,14 @@ export const facts = [
 ];
 
 export const posts: Post[] = [
+  {
+    id: "servobin",
+    title: "Electrical Trash Bin",
+    date: "09/11/2025",
+    category: ["Electronics", "Arduino", "Servo"],
+    description: "A relatively smart Trash Bin",
+    content: "ServoBin",
+  },
   {
     id: "fractals",
     title: "Generative Recursion",
