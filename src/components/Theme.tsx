@@ -23,7 +23,7 @@ export default function Theme({isBlog}: {isBlog: boolean}) {
     return (
         <button 
             onClick={handleThemeSwitch} 
-            className={`text-2xl md:absolute mt-2 bottom-5 right-5 ${isBlog ? "top-3" : ""}`}
+            className={`text-2xl md:absolute mt-2 top-0 right-5 ${isBlog ? "top-3" : ""}`}
         >
             {theme === "dark" ? (
                 <FontAwesomeIcon className="rounded-full p-1 dark:text-gray-300 transition-all hover:text-yellow-300" icon={faSun} />

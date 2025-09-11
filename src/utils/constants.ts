@@ -815,3 +815,53 @@ export const games = [
 ];
 
 export const media_books = ["Flatland", "Logically Fallacious"];
+
+export const websites = [
+  {
+    name: "eclock",
+    description: "A boring stale normal clock, made with Elm.",
+    link: "oebelus.github.io/eclock/",
+  },
+  {
+    name: "pokemon or programming concept?",
+    description: "An undertale themed mini-game.",
+    link: "https://oebelus.github.io/poke-or-prog/",
+  },
+  {
+    name: "Sudoku",
+    description:
+      "I used a sudoku API, but the solution to the grids is an algorithm I wrote.",
+    link: "https://oebelus.github.io/sudoku-solver/",
+  },
+  {
+    name: "Fractal-Mania",
+    description: "Some read-only fractals, I love THREE.js",
+    link: "https://oebelus.github.io/fractals-mania/",
+  },
+  {
+    name: "Rubik's Cube",
+    description: "A wonky-af Rubik's, written with the worst code ever.",
+    link: "https://oebelus.github.io/rubik-s/",
+  },
+  {
+    name: "3D Solar System",
+    description:
+      "One of the first code snippets I wrote, I had too much fun doing it (Wait for the website to load).",
+    link: "https://oebelus.github.io/solarSystem/",
+  },
+  {
+    name: "Platf2D",
+    description: "A luck-based platformer game.",
+    link: "https://oebelus.github.io/platf2d/",
+  },
+  {
+    name: "Pong",
+    description: "A pong game where you can either draw or lose.",
+    link: "https://oebelus.github.io/pongTs/",
+  },
+  {
+    name: "plan8arium",
+    description: "3D rotating planets with their data and a gravity simulator.",
+    link: "https://oebelus.github.io/plan8arium/",
+  },
+];
