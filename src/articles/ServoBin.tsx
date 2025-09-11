@@ -10,7 +10,6 @@ export default function ServoBin() {
        const fetchMarkdown = async () => {
             try {
                 const response = await fetch('/servoBin.md');
-                console.log(response)
                 if (!response.ok) {
                     throw new Error('Failed to fetch markdown');
                 }
