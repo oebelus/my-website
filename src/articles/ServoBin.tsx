@@ -51,11 +51,17 @@ export default function ServoBin() {
                 img: ({...props}) => (
                     <img 
                     {...props} 
-                    className="md:max-w-[550px] max-w-200px h-auto my-2 rounded shadow-sm hover:shadow-md transition-shadow duration-200"
+                    className="md:max-w-[550px] max-w-200 h-auto my-2 rounded shadow-sm hover:shadow-md transition-shadow duration-200"
                     loading="lazy"
                     onError={(e) => {
                         e.currentTarget.style.display = 'none';
                     }}
+                    />
+                ),
+                video: ({...props}) => (
+                    <video 
+                    {...props} 
+                    className="md:max-w-[550px] max-w-200 h-auto"
                     />
                 )
                 }}>

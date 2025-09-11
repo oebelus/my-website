@@ -159,4 +159,7 @@ AND TADAAAAA!
 ![Final Result](/servobin/final-result.jpg)
 
 A video demo:
-![Video Result](/servobin/video-result.mp4)
+
+<video controls>
+  <source src="/servobin/video-result.mp4" type="video/mp4">
+</video>
