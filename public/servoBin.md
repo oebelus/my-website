@@ -48,10 +48,10 @@ Some relevant specs:
 - <u>Power Supply</u>: +5 V DC;
 
 Image of the front:
-![Front Image of the Sensor](servobin/sensor-front.jpg)
+![Front Image of the Sensor](/servobin/sensor-front.jpg)
 
 The back:
-![Back Image of the Sensor](servobin/sensor-back.jpg)
+![Back Image of the Sensor](/servobin/sensor-back.jpg)
 Such a beauty, right?
 
 # Step 2: The actual code
@@ -88,7 +88,7 @@ Servo servo;
 ```
 
 (Spoiler alert) Here is the servo motor I will be using:
-![Servo Motor](servobin/servo.jpg)
+![Servo Motor](/servobin/servo.jpg)
 
 Now, the `setup()`:
 
@@ -156,10 +156,10 @@ servoPos = 180;
 ```
 
 AND TADAAAAA!
-![Final Result](servobin/final-result.jpg)
+![Final Result](/servobin/final-result.jpg)
 
 A video demo:
 
 <video controls>
-  <source src="servobin/video-result.mp4" type="video/mp4">
+  <source src="/servobin/video-result.mp4" type="video/mp4">
 </video>
