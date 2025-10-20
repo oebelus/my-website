@@ -1,4 +1,4 @@
-<span style="background-color:dimgray">(1) Describe the electronic circuit ports by a VHDL program.</span>
+<span style="text-decoration:underline; font-size:25px">(1) Describe the electronic circuit ports by a VHDL program.</span>
 
 <div style="display:flex; justify-content:center"> <img src="https://imgur.com/5dO1lKZ.png" /> </div>
 
@@ -48,7 +48,7 @@ end;
 
 ```VHDL
 entity electronic_circuit is
- port( a: in natural range 0 to 255;       -- 8 bits: 0 to 255
+ port( a: in natural range 0 to 25=5;       -- 8 bits: 0 to 255
     b: in natural range 0 to 63;        -- 6 bits: 0 to 63
     c: in natural range 0 to 15;        -- 4 bits: 0 to 15
     d: out natural range 0 to 255;      -- 8 bits: 0 to 255
@@ -102,7 +102,7 @@ entity electronic_circuit is
 end;
 ```
 
-<span style="background-color:dimgray">(2) Implement this Boolean function in VHDL.</span>
+<span style"text-decoration:underline; font-size:25px">(2) Implement this Boolean function in VHDL.</span>
 $$f=ab'+bc'$$
 
 ```VHDL
@@ -119,7 +119,7 @@ architecture b_arc of boolean is
 end;
 ```
 
-<span style="background-color:dimgray">(3) Define a signal object with data type integer, and the initial value of the object is 2342.</span>
+<span style="text-decoration:underline; font-size:25px">(3) Define a signal object with data type integer, and the initial value of the object is 2342.</span>
 
 ```VHDL
 signal my_integer: integer := 2342;
@@ -128,7 +128,7 @@ signal my_integer: integer := 2342;
 <span style="background-color: dimgray">(4) Consider the signal object “<code>signal my_obj: integer;</code>”. How many bits are used for this signal object?</span>
 32 bits.
 
-<span style="background-color:dimgray">(5) State the differences between a signal object and variable object.</span>
+<span style="text-decoration:underline; font-size:25px">(5) State the differences between a signal object and variable object.</span>
 
 - **Signal**:
  	- Has time dimension;
@@ -145,7 +145,7 @@ signal my_integer: integer := 2342;
  	- `s <= value;`
  	- `v := value;`.
 
-<span style="background-color:dimgray">(6) Find the results of the following operations.</span>
+<span style="text-decoration:underline; font-size:25px">(6) Find the results of the following operations.</span>
 
 - -15 mod 3 = 0;
 - 15 mod (-3) = 0;
@@ -154,7 +154,7 @@ signal my_integer: integer := 2342;
 - 15 rem (-3) = 0;
 - -15 rem -3 = 0;
 
-<span style="background-color:dimgray">(7) Declare two generic signal objects having `integer` data types with initial values 8 and 15.</span>
+<span style="text-decoration:underline; font-size:25px">(7) Declare two generic signal objects having `integer` data types with initial values 8 and 15.</span>
 
 ```VHDL
 generic (i_1: integer := 8;
