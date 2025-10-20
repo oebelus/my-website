@@ -497,6 +497,15 @@ export const facts = [
 
 export const posts: Post[] = [
   {
+    id: "vhdlone",
+    title: "A Tutorial Introduction to VHDL Programming: Chapter 1 Solutions",
+    date: "10/20/2025",
+    category: ["FPGA", "VHDL", "Hardware", "Digital Electronics"],
+    description:
+      "Suggested Solutions for the first chapter of A Tutorial Introduction to VHDL Programming",
+    content: "VhdlOne",
+  },
+  {
     id: "servobin",
     title: "Electrical Trash Bin",
     date: "09/11/2025",

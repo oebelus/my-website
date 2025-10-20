@@ -2,6 +2,7 @@ import Beans from "../../articles/Beans";
 import ChapterOne from "../../articles/category/ChapterOne";
 import Fractals from "../../articles/Fractals";
 import ServoBin from "../../articles/ServoBin";
+import VhdlOne from "../../articles/VhdlOne";
 import { formatDate } from "../../utils/Date";
 
 interface BlogPostProps {
@@ -17,6 +18,7 @@ export default function BlogPost({ title, date, content, category }: BlogPostPro
     "ChapterOne": <ChapterOne />,
     "Fractals": <Fractals />,
     "ServoBin": <ServoBin />,
+    "VhdlOne": <VhdlOne />
   };
 
     return (
